@@ -1,8 +1,9 @@
+
+// function as props
+
 const BlogList = ({ blogs, title, handleDelete }) => {
-  // const BlogList = (props) => {
-  //   const blogs = props.blogs;
-  //   const title = props.title;
-  //  console.log(blogs);
+
+  // the blogs.id is in the state stored
 
   return (
     <div className='blog-list'>
@@ -19,3 +20,8 @@ const BlogList = ({ blogs, title, handleDelete }) => {
 };
 
 export default BlogList;
+
+
+
+
+ 

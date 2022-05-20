@@ -43,14 +43,15 @@ const Home = () => {
   const [name, setName] = useState("");
 
   const handleClick = (name) => {
-    setName(`Ne weekend shpirti ${name}`);
+    setName(`Irola ${name}`);
   };
 
   useEffect(() => {
     console.log("This effect will fire by himself");
-  }, []);
+  }, []); //empty, or we ca use a state, in order => when the state changes, run the useEffect
 
   const handleDelete = (id) => {
+    // filter returns a new array. Store it into state
     const deleteButton = blogs.filter((pizza) => pizza.id !== id);
     setBlogs(deleteButton);
   };
@@ -59,11 +60,11 @@ const Home = () => {
     <div className='blog-list'>
       <BlogList
         blogs={blogs}
-        title='This come from a props🎈'
+        title='Dream On baby🎈'
         handleDelete={handleDelete}
       />
-      <button onClick={() => handleClick("kendon")}>Click</button>
-      <p>{name} ❤️ </p>
+      <button onClick={() => handleClick("❤️")}>Heart</button>
+      <p>{name} </p> 
     </div>
   );
 };

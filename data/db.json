@@ -1,0 +1,19 @@
+{
+    "blogs": [
+        {
+            "title": "First Book Blog",
+            "body": "Why we need this type of json file to use?",
+            "author": "Oerd",
+            "id": 1
+        },
+        {
+            "title": "Second Book Blog",
+            "body": "Why do we need a body and author into a json file??",
+            "author": "Bej",
+            "id": 2
+        }
+    ]
+}
+
+
+
