@@ -3,6 +3,8 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
+  // will make the spinner if the data fetch is geting time
+  const [isPending, setIsPending] = useState(true);
 
   const [name, setName] = useState("");
 
@@ -18,28 +20,28 @@ const Home = () => {
     }).then((data)=>{
       // console.log(data);
       setBlogs(data);
+      setIsPending(false)
     })
   }, []); //empty, or we ca use a state, in order => when the state changes, run the useEffect
 
-  const handleDelete = (id) => {
-    // filter returns a new array. Store it into state
-    const deleteButton = blogs.filter((pizza) => pizza.id !== id);
-    setBlogs(deleteButton);
-  };
 
-  return (
-    <div className='blog-list'>
-      {/* condition needed: first the data was null. We need condition because we are waiting from fetch data.json(). When we receive the data, we make a condtion, if true, than pass the component with props. */}
+
+
+
+  return ( 
+    <div className='home'>
+      {
+        isPending && <div> Loading . . . 🎈 </div>
+      }
+
       {
         blogs &&  <BlogList
         blogs={blogs}
-        title='Dream On baby🎈'
-        handleDelete={handleDelete}
       />
       }
       <button onClick={() => handleClick("❤️")}>Heart</button>
       <p>{name} </p> 
-    </div>
+    </div> 
   );
 };
 
