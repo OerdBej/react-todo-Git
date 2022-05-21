@@ -1,16 +1,29 @@
 {
     "blogs": [
         {
-            "title": "First Book Blog",
-            "body": "Why we need this type of json file to use?",
-            "author": "Oerd",
+            "title": "Ismail Kadare 🇦🇱 ",
+            "body": "Ismail Kadare is an Albanian novelist, poet, essayist, screenwriter, and playwright. He is a leading international literary figure and intellectual. He focused on poetry until the publication of his first novel, The General of the Dead Army, which made him famous internationally",
+            "country": "Albanian",
             "id": 1
         },
         {
-            "title": "Second Book Blog",
-            "body": "Why do we need a body and author into a json file??",
-            "author": "Bej",
+            "title": "Jean Paul Sartre 🇫🇷",
+            "body": "Sartre's theory of existentialism states that “existence precedes essence”, that is only by existing and acting a certain way do we give meaning to our lives. According to him, there is no fixed design for how a human being should be and no God to give us a purpose.",
+            "country": "France",
             "id": 2
+        },
+        {
+            "title": "Umberto Eco 🇮🇹",
+            "body": "Umberto Eco, (born January 5, 1932, Alessandria, Italy—died February 19, 2016, Milan), Italian literary critic, novelist, and semiotician (student of signs and symbols) best known for his novel Il nome della rosa (1980; The Name of the Rose).",
+            "country": "Italian",
+            "id": 3
+        },
+        {
+            "title": "Fernando Pessoa 🇵🇹",
+            "body": "Fernando Pessoa is one of the most famous Portuguese writers. He is known for making Portuguese literature known across the globe, and he is well-loved both in Portugal and internationally.",
+            "country": "Portugal",
+            "id": 4
+        
         }
     ]
 }
